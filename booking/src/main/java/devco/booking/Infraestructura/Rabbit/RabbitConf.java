@@ -23,7 +23,7 @@ public class RabbitConf {
     }
 
     @Bean
-    public SimpleMessageListenerContainer container(){
+    public SimpleMessageListenerContainer container(ConnectionFactory connectionFactory){
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
         //una aplicación escucha una cola
         container.setQueueNames("booking.viajes.viajegenerado");
