@@ -22,6 +22,6 @@ public class ViajeController {
         return new ResponseEntity<Viaje>(viaje, null , HttpStatus.OK);
     }
 
-    
+
 
 }
